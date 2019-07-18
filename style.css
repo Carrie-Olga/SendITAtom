@@ -67,11 +67,10 @@ p {
 }
 
 .menu {
-  background-color: #ccc;
   background-image: url("img/main.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -400px;
+  background-position: center;
   height: 280px;
   position: relative;
 }
@@ -575,9 +574,6 @@ footer .menu__nav_social {
 @media screen and (min-width: 321px) and (max-width: 1440px) {
   .menu {
     height: 415px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -280px;
   }
 
   .container {
@@ -939,9 +935,6 @@ footer .menu__nav_social {
 @media screen and (min-width: 1441px) {
   .menu {
     height: 525px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 0;
   }
 
   .logo {
