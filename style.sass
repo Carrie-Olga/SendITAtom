@@ -94,6 +94,8 @@ p
         line-height: 2.3rem
         color: $font-color-main
         display: block
+        &:hover
+          font-weight: 700
     & form input
       background-color: $font-color-bright
     & form
@@ -134,6 +136,8 @@ p
   min-width: 100%
   max-height: 50px
   line-height: 1rem
+  &:hover
+    box-shadow: 0px 5px 10px $background-color-blueish
 
   &__blue
     background-color: $background-color-blueish
@@ -141,6 +145,8 @@ p
   &__yellow
     background-color: $background-color-yellowish
     margin-top: 10px
+    &:hover
+      box-shadow: 0px 5px 10px $background-color-yellowish
 
   &__guarantee
     padding: 17px 30px
@@ -150,11 +156,13 @@ p
     font-size: 1rem
     font-weight: 700
     text-transform: uppercase
+    display: block
 
     &_y
       color: $font-color-dark
       font-weight: 700
       text-transform: uppercase
+      display: block
 
 .main
   background-color: $font-color-bright
@@ -262,6 +270,9 @@ p
     width: 0.8rem
     height: 1.3rem
     margin: auto 0
+    display: block
+    &:hover
+      color: $background-color-blueish
 
     &_left
       margin-right: 0.6rem
