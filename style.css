@@ -27,8 +27,8 @@ h1 {
 h2 {
   color: #000;
   font-size: 1.5rem;
-  line-height: 1.8rem;
   font-weight: 700;
+  line-height: 1.8rem;
 }
 
 .h2_step {
@@ -38,8 +38,8 @@ h2 {
 h3 {
   color: #000;
   font-size: 1.12rem;
-  line-height: 1.12rem;
   font-weight: 700;
+  line-height: 1.12rem;
   margin-bottom: 15px;
 }
 
@@ -54,15 +54,11 @@ p {
   margin-bottom: 20px;
 }
 
-.main__step:last-of-type p {
-  margin-bottom: 0;
-}
-
 .container {
-  width: 320px;
-  margin: 0 auto;
   box-sizing: border-box;
+  margin: 0 auto;
   padding: 20px;
+  width: 320px;
 }
 
 .header {
@@ -72,16 +68,15 @@ p {
 
 .menu {
   background-image: url("img/main.png");
-  background-color: #cccccc;
-  height: 280px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -400px;
+  background-position: center;
+  height: 280px;
   position: relative;
 }
 .menu__nav {
   position: absolute;
-  background-color: white;
+  background-color: #fff;
   top: 0;
   width: 100%;
   display: none;
@@ -100,11 +95,14 @@ p {
 .menu__nav_ul li a {
   font-size: 1.125rem;
   line-height: 2.3rem;
-  color: #000000;
+  color: #000;
   display: block;
 }
+.menu__nav_ul li a:hover {
+  font-weight: 700;
+}
 .menu__nav form input {
-  background-color: white;
+  background-color: #fff;
 }
 .menu__nav form {
   border-bottom: none;
@@ -155,6 +153,9 @@ p {
   max-height: 50px;
   line-height: 1rem;
 }
+.button:hover {
+  box-shadow: 0px 5px 10px #008dcd;
+}
 .button__blue {
   background-color: #008dcd;
 }
@@ -162,23 +163,28 @@ p {
   background-color: #ffcc00;
   margin-top: 10px;
 }
+.button__yellow:hover {
+  box-shadow: 0px 5px 10px #ffcc00;
+}
 .button__guarantee {
   padding: 17px 30px;
 }
 .button__a {
-  color: #ffffff;
+  color: #fff;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
+  display: block;
 }
 .button__a_y {
   color: #363636;
   font-weight: 700;
   text-transform: uppercase;
+  display: block;
 }
 
 .main {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .main__1 {
   background-color: #f7f7f7;
@@ -201,10 +207,14 @@ p {
 .main__step {
   min-height: 180px;
 }
+.main__step:last-of-type p {
+  margin-bottom: 0;
+}
 .main__step-img {
   max-width: 100%;
   max-height: 100%;
   margin-bottom: 15px;
+  height: 210px;
 }
 
 .logo__img {
@@ -216,14 +226,14 @@ p {
   background-color: #008dcd;
 }
 .callback_h1 {
-  color: #ffffff;
+  color: #fff;
   font-size: 1.75rem;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 2rem;
 }
 .callback_p {
-  color: #ffffff;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 0.875rem;
@@ -238,12 +248,12 @@ p {
   font-size: 1rem;
   font-weight: 400;
   background-color: #008dcd;
-  color: #ffffff;
-  border: 1px solid white;
+  color: #fff;
+  border: 1px solid #fff;
   outline: none;
 }
 .callback__input::placeholder {
-  color: #ffffff;
+  color: #fff;
   opacity: 1;
 }
 .callback__checkbox {
@@ -254,7 +264,7 @@ p {
   margin-right: 5px;
 }
 .callback__check_l {
-  color: #ffffff;
+  color: #fff;
   font-size: 0.625rem;
   font-weight: 400;
 }
@@ -265,7 +275,7 @@ p {
 }
 
 .feedback {
-  background-color: white;
+  background-color: #fff;
   padding-bottom: 0.3rem;
 }
 .feedback__items {
@@ -284,6 +294,10 @@ p {
   width: 0.8rem;
   height: 1.3rem;
   margin: auto 0;
+  display: block;
+}
+.feedback__arrow:hover {
+  color: #008dcd;
 }
 .feedback__arrow_left {
   margin-right: 0.6rem;
@@ -330,7 +344,7 @@ p {
   width: 86px;
   height: 86px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #fff;
 }
 .plus__item_circle-img1 {
   background-image: url("img/plus1.png");
@@ -397,7 +411,7 @@ p {
 }
 
 .guarantee {
-  background-color: white;
+  background-color: #fff;
 }
 .guarantee__arrow {
   width: 0.8rem;
@@ -475,7 +489,7 @@ p {
 }
 .doubts__item {
   display: flex;
-  background-color: white;
+  background-color: #fff;
   border-radius: 32px;
   padding: 15px 25px;
   margin-bottom: 10px;
@@ -493,7 +507,7 @@ p {
 }
 
 .brands {
-  background-color: white;
+  background-color: #fff;
 }
 .brands__block {
   display: flex;
@@ -557,7 +571,7 @@ p {
 }
 .footer__copyright {
   display: flex;
-  color: #000000;
+  color: #000;
   font-size: 0.625rem;
   font-weight: 400;
   justify-content: space-between;
@@ -575,9 +589,6 @@ footer .menu__nav_social {
 @media screen and (min-width: 321px) and (max-width: 1440px) {
   .menu {
     height: 415px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -280px;
   }
 
   .container {
@@ -605,7 +616,7 @@ footer .menu__nav_social {
     min-width: 570px;
   }
   .menu__nav_ul li a {
-    color: #ffffff;
+    color: #fff;
   }
 
   .top-text-ipad {
@@ -615,13 +626,13 @@ footer .menu__nav_social {
   }
 
   h1 {
-    color: #ffffff;
+    color: #fff;
     font-size: 2.75rem;
     line-height: 3.2rem;
   }
 
   h2 {
-    color: #ffffff;
+    color: #fff;
     font-size: 1.75rem;
     line-height: 2.5rem;
     margin-bottom: 40px;
@@ -916,7 +927,7 @@ footer .menu__nav_social {
   }
 
   footer .menu__nav_footer a {
-    color: #000000;
+    color: #000;
     font-weight: 400;
     font-size: 0.875rem;
   }
@@ -939,9 +950,6 @@ footer .menu__nav_social {
 @media screen and (min-width: 1441px) {
   .menu {
     height: 525px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 0;
   }
 
   .logo {
@@ -982,7 +990,7 @@ footer .menu__nav_social {
     margin-top: 15px;
   }
   .menu__nav_ul li a {
-    color: #ffffff;
+    color: #fff;
   }
 
   .top-text-ipad {
@@ -991,13 +999,13 @@ footer .menu__nav_social {
   }
 
   h1 {
-    color: #ffffff;
+    color: #fff;
     font-size: 3rem;
     line-height: 3.2rem;
   }
 
   h2 {
-    color: #ffffff;
+    color: #fff;
     font-size: 2.5rem;
     line-height: 2.5rem;
     margin-bottom: 40px;
@@ -1090,7 +1098,7 @@ footer .menu__nav_social {
   }
 
   .callback_h1 {
-    color: #ffffff;
+    color: #fff;
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -1346,7 +1354,7 @@ footer .menu__nav_social {
   }
 
   footer .menu__nav_footer a {
-    color: #000000;
+    color: #000;
     font-weight: 400;
     font-size: 1.125rem;
   }
